@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Task_3</string>
+    <string name="rice">Rice :   65 Tk. per kg.</string>
+    <string name="sugar">Sugar : 35 Tk. per kg.</string>
+    <string name="milk">Milk : 60 Tk. per kg.</string>
+    <string name="onion">Onion : 80 Tk. per kg.</string>
+    <string name="potato">Potato : 50 Tk. per kg.</string>
+
+</resources>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/price_details"
+            android:background="#FB0303"
+            android:textColor="#FDFDFC"
+            android:paddingLeft="40dp"
+            android:layout_width="413dp"
+            android:layout_height="35dp"
+            android:text="Product And Price Details"
+            android:textSize="25sp" >
+
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#0FD3B1"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rice_price"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/rice"
+                    android:textColor="#0E0003"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/sugar_price"
+                    android:textSize="15dp"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/sugar"
+                    android:textColor="#0E0003"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/milk_price"
+                    android:layout_width="306dp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/milk"
+                    android:textColor="#0E0003"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/onion_price"
+                    android:layout_width="306dp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/onion"
+                    android:textColor="#0E0003"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/potato_price"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/potato"
+                    android:textColor="#0E0003"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="#0830B1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/groceries"
+                    android:drawableLeft="@drawable/groceries"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FAF8F8"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="40dp"
+                    android:text="Groceries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:drawableLeft="@drawable/amount"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FAF8F8"
+                    android:text="Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/rice_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rice"
+                    android:paddingRight="72dp"
+                    android:textColor="#DA2B08"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+                </CheckBox>
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+                        android:id="@+id/rice_seekbar_ID"
+                        android:layout_width="200dp"
+                        android:max="10"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp">
+
+                    </SeekBar>
+
+                    <TextView
+                        android:id="@+id/rice_seekbar_TextView_ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingLeft="22dp"
+                        android:textColor="#A60BA6">
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/sugar_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sugar"
+                    android:paddingRight="55dp"
+                    android:textColor="#DA2B08"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </CheckBox>
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+                        android:id="@+id/sugar_seekbar_ID"
+                        android:max="10"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp">
+
+                    </SeekBar>
+
+                   <TextView
+                       android:id="@+id/sugar_seekbar_TextView_ID"
+                       android:paddingLeft="22dp"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       android:textColor="#A60BA6"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/milk_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milk"
+                    android:paddingRight="72dp"
+                    android:textColor="#DA2B08"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </CheckBox>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+                        android:id="@+id/milk_seekbar_ID"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:paddingTop="8dp">
+                    </SeekBar>
+
+                    <TextView
+                        android:id="@+id/milk_seekbar_TextView_ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="22dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#A60BA6">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/onion_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Onion"
+                    android:paddingRight="57dp"
+                    android:textColor="#DA2B08"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </CheckBox>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+                        android:id="@+id/onion_seekbar_ID"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:paddingTop="8dp">
+
+                    </SeekBar>
+
+
+                    <TextView
+                        android:id="@+id/onion_seekbar_TextView_ID"
+                        android:textColor="#A60BA6"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingStart="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/potato_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Potato"
+                    android:paddingRight="52dp"
+                    android:textColor="#DA2B08"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </CheckBox>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+                        android:id="@+id/potato_seekbar_ID"
+                        android:layout_width="200dp"
+                        android:max="10"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp">
+
+                    </SeekBar>
+
+                    <TextView
+                        android:id="@+id/potato_seekbar_TextView_ID"
+                        android:textColor="#A60BA6"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingStart="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:id="@+id/home_delivery_switch"
+                    android:paddingTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#0DB614"
+                    android:text="Home Delivery : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Switch>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:textColor="#0C0200"
+                android:textStyle="bold"
+                android:text="Payment Method:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+             <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radio_Group_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/bkash_radioButton"
+                        android:paddingTop="10dp"
+                        android:text="bKash"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#EC6308"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/cash_radioButton"
+                        android:paddingTop="10dp"
+                        android:text="Cash"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#CA18E8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/nogod_radioButton"
+                        android:paddingTop="10dp"
+                        android:text="Nogod"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#3988E3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/credit_card_radiiButton"
+                        android:paddingTop="10dp"
+                        android:text="Credit Card"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#F63955"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/place_My_Order_Button"
+                    android:textStyle="bold"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#E3CD0F"
+                    android:paddingTop="15dp"
+                    android:text="Place My Order"
+                    android:textColor="#090909"
+                    android:textSize="20dp">
+
+                </Button>
+
+                <TextView
+
+                android:id="@+id/show_Product_Result"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#711C10"
+                    android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+                <TextView
+
+                    android:id="@+id/show_DeliverCharge_Result_TextView"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#711C10"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+
+                    android:id="@+id/show_Total_Price_Result"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#711C10"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+
+                    android:id="@+id/show_Payment_Result"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#711C10"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
